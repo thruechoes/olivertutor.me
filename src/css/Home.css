@@ -1,0 +1,381 @@
+/* .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F0F4F8; 
+}
+
+.main-header {
+    background-image: url('../images/computer2-1.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 40px 0;
+    color: #FFF;
+    width: 100%;
+}
+
+.book-button {
+    background-color: #6C63FF; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.reviews-section, 
+.about-oliver,
+.resume-image,
+.resume-section, 
+.portfolio-section,
+.portfolio-image,
+.blog-image, 
+.blog-section,
+.scheduling-section,
+.scheduling-image, 
+.tutoring-session,
+.contact-image, 
+.contact-oliver {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.reviews-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}*/
+
+/* For small screens, let's stack the columns */
+/*@media (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column;
+    }
+} */
+
+/* */
+/* Basic reset for margin and padding */
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-container {
+    font-family: Arial, sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 50%;         
+    padding: 15px;
+}
+
+.intro-section {
+    background-color: #FFAED2;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.reviews-section,
+.about-section,
+.portfolio-section,
+.resume-section {
+    margin-bottom: 20px;
+    background-color: #E8EEFF; 
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.book-tutoring-btn,
+.portfolio-section button,
+.resume-section button {
+    padding: 10px 20px;
+    background-color: #8BCB8F; 
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+h1, h2 {
+    color: #755E8B; 
+}
+
+p {
+    color: #4A4A4A; 
+}
+*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 250px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.column {
+    flex: 0 0 50%;
+    max-width: 50%;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    box-sizing: border-box;
+}
+
+.big-font {
+    font-size: 140%;
+}
+
+.small-font {
+    font-size: 75%;
+}
+
+.home-container {
+    /* display: flex;*/
+    /*flex-wrap: wrap;
+    justify-content: space-between;*/
+    font-size: 120%;
+}
+
+.intro-section {
+    flex: 1;
+    background-color: #C5ABFF;  /* Color based on screenshot */
+    padding: 10%;
+}
+
+.single-column {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/* ** *** ** * ** *** ** * ** *** ** * ** *** ** * ** *** ** * */
+/* REVIEWS.js */
+
+.review-row {
+    flex-wrap: nowrap;
+}
+
+.reviews-section {
+    /*flex: 1;*/
+    /* background-color: #E7FFA9; */ /* Color based on screenshot */
+    padding: 5%;
+    /*display: flex;*/
+}
+
+.reviews-container {
+    flex: nowrap;
+}
+
+.column-thirds {
+    flex: 25%;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.lil-data {
+    min-height: 50px;
+    font-size: 80%;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+}
+
+.review-card {
+    flex: 1;
+    margin: 0 20px;
+    /* Other styles specific to the review card */
+}
+
+.column-review {
+
+}
+
+/* ** *** ** * ** *** ** * ** *** ** * ** *** ** * ** *** ** * */
+
+.about-oliver {
+    flex: 1;
+    background-color: #A7FFD5;  /* Color based on screenshot */
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 120%;
+}
+
+.column-about {
+    flex: 0 0 50%;
+    max-width: 50%;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    box-sizing: border-box;
+}
+
+.shift-p {
+    /*padding-left: 5%;*/
+    padding-right: 8%;
+}
+
+.resume-section {
+    flex: 1;
+    background-color: #C5ABFF;
+    padding: 10%;
+}
+
+.portfolio-section {
+    flex: 1;
+    background-color: #A7FFD5;  /* Color based on screenshot */
+    padding: 10%;
+}
+
+.blog-section {
+    flex: 1;
+    background-color: #FFC8FF;
+    padding: 10%;
+}
+
+.scheduling-section {
+    flex: 1;
+    background-color: #C5ABFF;
+    padding: 10%;
+}
+
+/* ** *** ** * ** *** ** * ** *** ** * ** *** ** * ** *** ** * */
+/* CONTACT.js */ 
+
+.contact-oliver {
+    flex: 1;
+    background-color: #A7FFD5;
+}
+
+.contact-section {
+    background-color: #A7FFD5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    /*border: 5px;*/
+    border-radius: 5px;
+    width: 90%;
+    border-width: 2px;
+}
+
+.contact-form input, .contact-form textarea {
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form button {
+    background-color: #E5DAE5;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 95%;
+}
+
+.contact-form button:hover {
+    background-color: #8DE6B5;
+}
+
+/* Floating labels */
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-label {
+    position: absolute;
+    top: -10px;  /* adjust as needed */
+    left: 10px; /* adjust as needed */
+    background-color: #F2E3FF; /* same as .contact-section background-color */
+    padding: 0 5px;
+    font-size: 0.8rem;
+    color: #000;
+    border-width: 2px;
+}
+
+/* ** *** ** * ** *** ** * ** *** ** * ** *** ** * ** *** ** * */
+
+button {
+    background-color: #FFFAFF;  /* Color based on screenshot */
+    color: #000;
+    /*border: none; */
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFD749;
+}
+
+.book-tutoring-btn {
+    background-color: #FFD749;
+    color: #000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book-tutoring-btn:hover {
+    background-color: #FFFAFF;
+}
+
+/* ** *** ** * ** *** ** * ** *** ** * ** *** ** * ** *** ** * */
+/* IMGS */
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+/* ** *** ** * ** *** ** * ** *** ** * ** *** ** * ** *** ** * */
+/* SMALL SCREENS */
+
+/* Media query for responsiveness, stacking the columns on smaller screens */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+    }
+    
+    .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* ** *** ** * ** *** ** * ** *** ** * ** *** ** * ** *** ** * */

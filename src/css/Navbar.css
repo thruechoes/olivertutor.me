@@ -1,0 +1,43 @@
+.navbar {
+    background-color: #F0F4F8; /* Sample color; adjust to your design */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding a slight shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-content {
+    max-width: 1200px;
+    margin: 0 auto;  /* Centering content */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    height: 100px;  /* Adjust based on your logo's aspect ratio */
+    cursor: pointer;
+    width: auto;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;  /* Gap between menu items */
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #333; /* Sample text color; adjust to your design */
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    /* Optional: Add a hover effect */
+    &:hover {
+        background-color: #E0E0E0; /* Sample hover color; adjust to your design */
+    }
+}

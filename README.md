@@ -1,3 +1,25 @@
+# Tutoring Site 
+
+public/ 
+----index.html
+
+src/ 
+----components/
+----images/
+----svg/
+----pages/
+    ----Home.js
+    ----Blog.js
+    ----Courses.js
+    ...
+----App.js      # Main application component
+----index.js    # Entry point for the app
+
+package.json
+
+README.md
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
