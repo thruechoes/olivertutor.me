@@ -13,11 +13,11 @@ const Home = () => {
     return (
         <div className = "home-container">  
             {/* Main Header */}
-            <div className = "row">
-                <div className = "column">
+            <div className = "row borderer">
+                <div className = "column borderer">
                     <img src = { ComputerImage } alt = "Olivertutor.me" className = "full-img" />
                 </div>
-                <div className = "column intro-section">
+                <div className = "column intro-section borderer">
                     <h1>Enhance Your Career With Confidence</h1>
                     <p>Join me on this exciting journey into AI and Python. Let's not just learn, but innovate, explore, and lead the future together.</p>
                     <button className = "book-tutoring-btn">Book Tutoring</button>
@@ -28,7 +28,7 @@ const Home = () => {
             <Reviews />
 
             {/* About Oliver */}
-            <div className = "row">
+            <div className = "row borderer">
                 <section className = "about-oliver">
                     <h2>About Oliver: <i>from Bayesian Inference to Generative AI</i></h2>
                     <div className = "row">
@@ -44,11 +44,11 @@ const Home = () => {
             </div>
 
             {/* Oliver's Resume */}
-            <div className = "row">
-                <div className = "column resume-image">
+            <div className = "row borderer">
+                <div className = "column resume-image borderer">
                     <img src = { ResumeImage } alt = "Oliver's Resume" />
                 </div>
-                <div className = "column resume-section">
+                <div className = "column resume-section borderer">
                     <h2 className = "big-font">Check out Oliver's Resume</h2>
                     <h4>1. Hands-on Experience</h4>
                     <p>As Lead AI Researcher at Yeuvi LLC, I craft cutting-edge AI solutions for the business world. I bring this real-world, practical knowledge into our tutoring sessions, ensuring you're not just learning the theory but also its impactful applications.</p>
@@ -57,24 +57,24 @@ const Home = () => {
             </div>
 
             {/* Oliver's Portfolio */}
-            <div className = "row">
-                <div className = "column portfolio-section">
+            <div className = "row borderer">
+                <div className = "column portfolio-section borderer">
                     <h2>Oliver's Portfolio</h2>
                     <h4>2. A Self-taught Journey</h4>
                     <p>My path into the world of coding, statistics, ML, and AI started from scratch. I've been in the shoes of both a beginner and an expert, and this allows me to tailor our sessions to precisely where you are and where you aim to be.</p>
                     <button className = "portfolio-button">View Portfolio</button>
                 </div>
-                <div className = "column portfolio-image">
+                <div className = "column portfolio-image borderer">
                     <img src = { BirdBooks } alt = "Publications Galore" />
                 </div>
             </div>
 
             {/* Image with Books */}
-            <div className = "row">
-                <div className = "column blog-image">
+            <div className = "row borderer">
+                <div className = "column blog-image borderer">
                     <img src = { GirlBooks } alt = "Oliver's Blog" />
                 </div>
-                <div className = "column blog-section">
+                <div className = "column blog-section borderer">
                     <h2>Want to read the blog?</h2>
                     <h4>3. A Story of Resilience and Curiosity</h4>
                     <p>My upbringing in the hills of West Virginia, learning about nature's marvels, and my evolution into the world of code have crafted my unique teaching philosophy. With me, every session is not just about codes and algorithms; it's about understanding the deeper "why" and "how" behind them.</p>
@@ -83,24 +83,24 @@ const Home = () => {
             </div>
 
             {/* Scheduling */}
-            <div className = "row">
-                <div className = "column scheduling-section">
+            <div className = "row borderer">
+                <div className = "column scheduling-section borderer">
                     <h2>Schedule your tutoring session</h2>
                     <h4>4. A Blend of Academic and Practical Excellence</h4>
                     <p>My journey at UC Berkeley has seen me publish 12 scientific papers, deeply rooted in Python and AI. Together, we can navigate this confluence of academic rigor and real-world applications for a holistic learning experience.</p>
                     <button className = "book-tutoring-btn">Book Tutoring</button>
                 </div>
-                <div className = "column scheduling-image">
+                <div className = "column scheduling-image borderer">
                     <img src = { Scheduling } alt = "Schedule your Session" />
                 </div>
             </div>
 
             {/* Contact Oliver */}
-            <div className = "row">
-                <div className = "column contact-image">
+            <div className = "row borderer">
+                <div className = "column contact-image borderer">
                     <img src = { ContactImage } alt = "Student giving a thumbs up!" />
                 </div>
-                <div className = "column contact-oliver">
+                <div className = "column contact-oliver borderer">
                     <Contact />
                     {/*<h2>Contact Oliver</h2>
                     <form>

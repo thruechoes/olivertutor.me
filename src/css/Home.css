@@ -138,6 +138,10 @@ p {
     box-sizing: border-box;
 }
 
+.borderer {
+    border: 3px solid rgba(0, 0, 0, 0.77);
+}
+
 .big-font {
     font-size: 140%;
 }
