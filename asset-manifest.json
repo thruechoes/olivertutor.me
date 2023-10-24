@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/olivertutor.me/static/css/main.4869f001.chunk.css",
-    "main.js": "/olivertutor.me/static/js/main.8373ca17.chunk.js",
-    "main.js.map": "/olivertutor.me/static/js/main.8373ca17.chunk.js.map",
-    "runtime-main.js": "/olivertutor.me/static/js/runtime-main.2b099e50.js",
-    "runtime-main.js.map": "/olivertutor.me/static/js/runtime-main.2b099e50.js.map",
-    "static/js/2.a85d9058.chunk.js": "/olivertutor.me/static/js/2.a85d9058.chunk.js",
-    "static/js/2.a85d9058.chunk.js.map": "/olivertutor.me/static/js/2.a85d9058.chunk.js.map",
-    "static/js/3.98c5015c.chunk.js": "/olivertutor.me/static/js/3.98c5015c.chunk.js",
-    "static/js/3.98c5015c.chunk.js.map": "/olivertutor.me/static/js/3.98c5015c.chunk.js.map",
+    "main.js": "/olivertutor.me/static/js/main.ed58a539.chunk.js",
+    "main.js.map": "/olivertutor.me/static/js/main.ed58a539.chunk.js.map",
+    "runtime-main.js": "/olivertutor.me/static/js/runtime-main.bc4128fe.js",
+    "runtime-main.js.map": "/olivertutor.me/static/js/runtime-main.bc4128fe.js.map",
+    "static/js/2.d2e2db8b.chunk.js": "/olivertutor.me/static/js/2.d2e2db8b.chunk.js",
+    "static/js/2.d2e2db8b.chunk.js.map": "/olivertutor.me/static/js/2.d2e2db8b.chunk.js.map",
+    "static/js/3.ca1eedfc.chunk.js": "/olivertutor.me/static/js/3.ca1eedfc.chunk.js",
+    "static/js/3.ca1eedfc.chunk.js.map": "/olivertutor.me/static/js/3.ca1eedfc.chunk.js.map",
     "index.html": "/olivertutor.me/index.html",
-    "precache-manifest.124e290f817a925db2eee89cc8a0efa3.js": "/olivertutor.me/precache-manifest.124e290f817a925db2eee89cc8a0efa3.js",
+    "precache-manifest.df90ce3525d0445c8d23c9f007a1ec44.js": "/olivertutor.me/precache-manifest.df90ce3525d0445c8d23c9f007a1ec44.js",
     "service-worker.js": "/olivertutor.me/service-worker.js",
     "static/css/main.4869f001.chunk.css.map": "/olivertutor.me/static/css/main.4869f001.chunk.css.map",
-    "static/js/2.a85d9058.chunk.js.LICENSE.txt": "/olivertutor.me/static/js/2.a85d9058.chunk.js.LICENSE.txt",
+    "static/js/2.d2e2db8b.chunk.js.LICENSE.txt": "/olivertutor.me/static/js/2.d2e2db8b.chunk.js.LICENSE.txt",
     "static/media/Logo.svg": "/olivertutor.me/static/media/Logo.b3e02eee.svg",
     "static/media/bird-books.png": "/olivertutor.me/static/media/bird-books.96d96ef2.png",
     "static/media/computer2-1.png": "/olivertutor.me/static/media/computer2-1.22491904.png",
@@ -23,9 +23,9 @@
     "static/media/scheduling.png": "/olivertutor.me/static/media/scheduling.6c319d54.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2b099e50.js",
-    "static/js/2.a85d9058.chunk.js",
+    "static/js/runtime-main.bc4128fe.js",
+    "static/js/2.d2e2db8b.chunk.js",
     "static/css/main.4869f001.chunk.css",
-    "static/js/main.8373ca17.chunk.js"
+    "static/js/main.ed58a539.chunk.js"
   ]
 }
