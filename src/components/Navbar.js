@@ -10,9 +10,9 @@ const Navbar = () => {
                 <img src = { Logo } alt="OliverTutor.me Logo" className = "navbar-logo" />
                 <ul className = "navbar-menu">
                     <li><a href = "/">Home</a></li>
-                    <li><a href = "/book-session">Book Session</a></li>
-                    <li><a href = "/online-courses">Online Courses</a></li>
-                    <li><a href = "/blog">Blog</a></li>
+                    <li><a href = "/#contact-section">Book Session</a></li>
+                    <li><a href = "/comingsoon">Online Courses</a></li>
+                    <li><a href = "/comingsoon">Blog</a></li>
                 </ul>
             </div>
         </nav>

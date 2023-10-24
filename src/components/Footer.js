@@ -11,14 +11,16 @@ const Footer = () => {
                 </div>
                 <div className="footer-links">
                     {/* Adjust with your actual links */}
-                    <a href="/about">About</a>
-                    <a href="/services">Services</a>
-                    <a href="/contact">Contact</a>
+                    <a href="/comingsoon">Blog</a>
+                    <a href="/comingsoon">Courses</a>
+                    <a href="/#contact-section">Contact</a>
                 </div>
                 <div className="footer-social">
                     {/* Example social media icons; replace with yours */}
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    {/*<a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>*/}
+                    <a href = "https://github.com/thruechoes">GitHub</a>
+                    <a href = "https://www.linkedin.com/in/oliver-muellerklein/">LinkedIn</a>
                 </div>
             </div>
             <div className="footer-copyright">

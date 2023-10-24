@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Reviews from '../components/Reviews.js';
 import Contact from '../components/Contact.js';
 import '../css/Home.css';
@@ -10,6 +11,12 @@ import ResumeImage from '../images/resume-writing.png';
 import Scheduling from '../images/scheduling.png';
 
 const Home = () => {
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate('/comingsoon');
+    };
+    
     return (
         <div className = "home-container">  
             {/* Main Header */}
@@ -20,7 +27,9 @@ const Home = () => {
                 <div className = "column intro-section borderer">
                     <h1>Enhance Your Career With Confidence</h1>
                     <p>Join me on this exciting journey into AI and Python. Let's not just learn, but innovate, explore, and lead the future together.</p>
-                    <button className = "book-tutoring-btn">Book Tutoring</button>
+                    <a href = "#contact-section">
+                        <button className = "book-tutoring-btn">Book Tutoring</button>
+                    </a>
                 </div>
             </div>
 
@@ -52,7 +61,7 @@ const Home = () => {
                     <h2 className = "big-font">Check out Oliver's Resume</h2>
                     <h4>1. Hands-on Experience</h4>
                     <p>As Lead AI Researcher at Yeuvi LLC, I craft cutting-edge AI solutions for the business world. I bring this real-world, practical knowledge into our tutoring sessions, ensuring you're not just learning the theory but also its impactful applications.</p>
-                    <button className = "resume-button">View Resume</button>
+                    <button className = "resume-button" onClick = { handleButtonClick }>View Resume</button>
                 </div>
             </div>
 
@@ -62,7 +71,7 @@ const Home = () => {
                     <h2>Oliver's Portfolio</h2>
                     <h4>2. A Self-taught Journey</h4>
                     <p>My path into the world of coding, statistics, ML, and AI started from scratch. I've been in the shoes of both a beginner and an expert, and this allows me to tailor our sessions to precisely where you are and where you aim to be.</p>
-                    <button className = "portfolio-button">View Portfolio</button>
+                    <button className = "portfolio-button" onClick = { handleButtonClick }>View Portfolio</button>
                 </div>
                 <div className = "column portfolio-image borderer">
                     <img src = { BirdBooks } alt = "Publications Galore" />
@@ -78,7 +87,7 @@ const Home = () => {
                     <h2>Want to read the blog?</h2>
                     <h4>3. A Story of Resilience and Curiosity</h4>
                     <p>My upbringing in the hills of West Virginia, learning about nature's marvels, and my evolution into the world of code have crafted my unique teaching philosophy. With me, every session is not just about codes and algorithms; it's about understanding the deeper "why" and "how" behind them.</p>
-                    <button className = "gray-btn">Read Blog</button>
+                    <button className = "gray-btn" onClick = { handleButtonClick }>Read Blog</button>
                 </div>
             </div>
 
@@ -88,7 +97,9 @@ const Home = () => {
                     <h2>Schedule your tutoring session</h2>
                     <h4>4. A Blend of Academic and Practical Excellence</h4>
                     <p>My journey at UC Berkeley has seen me publish 12 scientific papers, deeply rooted in Python and AI. Together, we can navigate this confluence of academic rigor and real-world applications for a holistic learning experience.</p>
-                    <button className = "book-tutoring-btn">Book Tutoring</button>
+                    <a href = "#contact-section">
+                        <button className = "book-tutoring-btn">Book Tutoring</button>
+                    </a>
                 </div>
                 <div className = "column scheduling-image borderer">
                     <img src = { Scheduling } alt = "Schedule your Session" />

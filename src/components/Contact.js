@@ -37,7 +37,7 @@ const ContactForm = () => {
     };
 
     return (
-        <section className="contact-section">
+        <section className="contact-section" id = "contact-section">
             <h2>Contact Oliver</h2>
             <form onSubmit = { handleSubmit } className="contact-form">
                 <div className = "input-container">
