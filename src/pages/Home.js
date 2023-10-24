@@ -97,10 +97,10 @@ const Home = () => {
 
             {/* Contact Oliver */}
             <div className = "row borderer">
-                <div className = "column contact-image borderer">
+                <div className = "column contact-image">
                     <img src = { ContactImage } alt = "Student giving a thumbs up!" />
                 </div>
-                <div className = "column contact-oliver borderer">
+                <div className = "column contact-oliver">
                     <Contact />
                     {/*<h2>Contact Oliver</h2>
                     <form>

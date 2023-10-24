@@ -79,7 +79,7 @@ const Reviews = () => {
             <div className = "row reviews-container">
                 { reviewsData.map(review => (
                     <div key = { review.id }
-                      className = "column-thirds review-card"
+                      className = "column-thirds review-card borderer"
                       style = {{ backgroundColor: getRandomColor() }}>
                         <div className = "row lil-data centered-content">
                             <div className = "column-review">

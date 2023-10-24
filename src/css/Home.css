@@ -330,6 +330,7 @@ p {
     font-size: 0.8rem;
     color: #000;
     border-width: 2px;
+    border-radius: 8px;
 }
 
 /* ** *** ** * ** *** ** * ** *** ** * ** *** ** * ** *** ** * */
