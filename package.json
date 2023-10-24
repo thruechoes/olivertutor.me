@@ -14,7 +14,7 @@
     "react-slick": "^0.29.0",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://thruechoes.github.io",
+  "homepage": "https://olivertutor.me",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
