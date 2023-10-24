@@ -13,11 +13,18 @@ root.render(
   </React.StrictMode>
 );*/
 
-ReactDOM.render(
+/*ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter basename = "/">
       <App />
     </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById('root')
+);*/
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
