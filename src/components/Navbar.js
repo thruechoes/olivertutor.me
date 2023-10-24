@@ -9,10 +9,11 @@ const Navbar = () => {
             <div className = "navbar-content">
                 <img src = { Logo } alt="OliverTutor.me Logo" className = "navbar-logo" />
                 <ul className = "navbar-menu">
+                    <li><i>Coming soon: </i></li>
                     <li><a href = "/">Home</a></li>
                     <li><a href = "/#contact-section">Book Session</a></li>
-                    <li><a href = "/comingsoon">Online Courses</a></li>
-                    <li><a href = "/comingsoon">Blog</a></li>
+                    <li><a href = "/">Online Courses</a></li>
+                    <li><a href = "/">Blog</a></li>
                 </ul>
             </div>
         </nav>

@@ -14,7 +14,8 @@ const Home = () => {
     const navigate = useNavigate();
 
     const handleButtonClick = () => {
-        navigate('/comingsoon');
+        /* navigate('/comingsoon');*/
+        navigate('/');
     };
     
     return (
@@ -61,7 +62,8 @@ const Home = () => {
                     <h2 className = "big-font">Check out Oliver's Resume</h2>
                     <h4>1. Hands-on Experience</h4>
                     <p>As Lead AI Researcher at Yeuvi LLC, I craft cutting-edge AI solutions for the business world. I bring this real-world, practical knowledge into our tutoring sessions, ensuring you're not just learning the theory but also its impactful applications.</p>
-                    <button className = "resume-button" onClick = { handleButtonClick }>View Resume</button>
+                    {/*<button className = "resume-button" onClick = { handleButtonClick }>View Resume</button>*/}
+                    <button className = "resume-button">Resume Coming Soon</button>
                 </div>
             </div>
 
@@ -71,7 +73,8 @@ const Home = () => {
                     <h2>Oliver's Portfolio</h2>
                     <h4>2. A Self-taught Journey</h4>
                     <p>My path into the world of coding, statistics, ML, and AI started from scratch. I've been in the shoes of both a beginner and an expert, and this allows me to tailor our sessions to precisely where you are and where you aim to be.</p>
-                    <button className = "portfolio-button" onClick = { handleButtonClick }>View Portfolio</button>
+                    {/*<button className = "portfolio-button" onClick = { handleButtonClick }>View Portfolio</button*/}
+                    <button className = "portfolio-button">Portfolio Coming Soon</button>
                 </div>
                 <div className = "column portfolio-image borderer">
                     <img src = { BirdBooks } alt = "Publications Galore" />
@@ -87,7 +90,8 @@ const Home = () => {
                     <h2>Want to read the blog?</h2>
                     <h4>3. A Story of Resilience and Curiosity</h4>
                     <p>My upbringing in the hills of West Virginia, learning about nature's marvels, and my evolution into the world of code have crafted my unique teaching philosophy. With me, every session is not just about codes and algorithms; it's about understanding the deeper "why" and "how" behind them.</p>
-                    <button className = "gray-btn" onClick = { handleButtonClick }>Read Blog</button>
+                    {/*<button className = "gray-btn" onClick = { handleButtonClick }>Read Blog</button>*/}
+                    <button className = "gray-btn">Blog Coming Soon</button>
                 </div>
             </div>
 

@@ -11,8 +11,8 @@ const Footer = () => {
                 </div>
                 <div className="footer-links">
                     {/* Adjust with your actual links */}
-                    <a href="/comingsoon">Blog</a>
-                    <a href="/comingsoon">Courses</a>
+                    <a href="/">Blog</a>
+                    <a href="/">Courses</a>
                     <a href="/#contact-section">Contact</a>
                 </div>
                 <div className="footer-social">
