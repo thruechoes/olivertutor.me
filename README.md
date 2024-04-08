@@ -1,5 +1,6 @@
 # Tutoring Site 
 
+```
 public/ 
 ----index.html
 
@@ -16,9 +17,8 @@ src/
 ----index.js    # Entry point for the app
 
 package.json
-
 README.md
-
+```
 
 # Getting Started with Create React App
 
