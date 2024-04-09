@@ -215,8 +215,12 @@ html {
 
 /* ** *** ** * ** *** ** * ** *** ** * ** *** ** * ** *** ** * */
 
+.a-btn {
+    text-decoration: none;
+}
+
 button {
-    background-color: #FFFAFF;  /* Color based on screenshot */
+    background-color: #FFD749; 
     color: #000;
     /*border: none; */
     padding: 10px 15px;
@@ -226,7 +230,7 @@ button {
 }
 
 button:hover {
-    background-color: #FFD749;
+    background-color: #FFFAFF;
 }
 
 .book-tutoring-btn {
