@@ -20,6 +20,24 @@ package.json
 README.md
 ```
 
+# Important NodeJS Version Note
+
+Starting Node.js 17+ there are sometimes issues with packages not using the most up-to-date cryptographic algorithms. 
+
+This has a workaround in **package.json**.
+
+Under the "scripts" section, change this build:
+
+```
+"build": "react-scripts build",
+```
+
+Into this workaround:
+
+```
+"build": "node --openssl-legacy-provider node_modules/.bin/react-scripts build",
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
