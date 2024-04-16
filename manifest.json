@@ -1,6 +1,7 @@
 {
   "short_name": "OliverTutor.me",
-  "name": "Oliver Tutoring - Data Science, Python, and Web Development Tutoring",
+  "name": "Oliver Tutoring - Data Science, AI, and Python Tutoring",
+  "description": "OliverTutor.me is the home of tutoring by me, Oliver, PhD Candidate at UC Berkeley. I tutor all topics relating to programming in Python and Data Science, with an expertise in Artificial Intelligence. I tutor mathematics, including Calculus, Multivariate Calculus, and Linear Algebra, and statistics, including frequentist, Bayesian, and all things relating to hypothesis testing. Reach out and let's get started reaching your learning goals today!",
   "icons": [
     {
       "src": "favicon.ico",
