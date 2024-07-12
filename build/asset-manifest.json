@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.20f66168.css",
+    "main.js": "/static/js/main.b57a57dc.js",
+    "static/media/contact-image.png": "/static/media/contact-image.5651a5bbeba876273b83.png",
+    "static/media/Logo.svg": "/static/media/Logo.bfcc085284b27d78847fec340a03a385.svg",
+    "static/media/computer2-1.png": "/static/media/computer2-1.92d07d66739835e1f60d.png",
+    "static/media/girl-books.png": "/static/media/girl-books.e5b4535d454d11132838.png",
+    "static/media/scheduling.png": "/static/media/scheduling.47c530a984d91ad1a8b1.png",
+    "static/media/resume-writing.png": "/static/media/resume-writing.8221c85695acb2e82704.png",
+    "static/media/bird-books.png": "/static/media/bird-books.b97435bb142b8983b677.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.20f66168.css.map": "/static/css/main.20f66168.css.map",
+    "main.b57a57dc.js.map": "/static/js/main.b57a57dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20f66168.css",
+    "static/js/main.b57a57dc.js"
+  ]
+}

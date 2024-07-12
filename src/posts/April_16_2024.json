@@ -1,0 +1,39 @@
+{"slug":"April_16_2024","frontmatter":{
+    "title":"From OneHotEncoders to Transformers",
+    "date":"2024-04-16"},
+    "content":"\n# Brief NLP History 
+    \n\nTransformer models have become all the rage. 
+    They have disrupted industries and taken the AI stage by storm. 
+    However, to many, the way chatbots, Large Language Models (LLMs), 
+    and other Transformer based AI systems function is largely a *Black Box*. 
+    
+    Prompts go in, magic happens, and then (*what seems like*) abstract reasoning comes out. 
+    But how is the meaning, or semantics, of language captured in a computer? \n\n
+    
+    I think it is important to understand where we came from to better plan for where we are headed. 
+    This post is going to provide a high-level overview of how people have figured out how to make 
+    computers process the semantic meaning of language. This is **NOT** an exhaustive summary or history. 
+    I will just give an overview and point out some key milestone develops that have allowed us the 
+    ability to process language as if it were numbers. \n\n\n## Precursor: A Binary System \n\n
+    
+    Computers are machines that compute algorithms using a strict binary language, 0s and 1s. 
+    Every action your computer takes is able to be expressed in binary. It is important to make this 
+    point because this is the idea at the heart of our discussion today. \n\n### Numbers and Categories 
+    
+    \n\nWe represent numeric and categorical data in our binary system. 
+    
+    \n\n## Our Example \n\nImagine that we have our first dataset to work with. The data comes from reviews. 
+    Each review is a row. We want to find semantic importance across the reviews.
+    
+    \n\n### Terminology \n\n**Documents (Docs, D):** these are the reviews. 
+    
+    \n\n**Vocabulary (Vocab, V):** these are the unique words across the reviews. 
+    \n\n## OneHotEncoders \n\nHow do you represent multiple categories with numbers with equal bias to all?
+    
+    OneHotEncoders came about as a solution to this question. 
+    
+    You can represent multiple words in a unique way while maintaining an equal representation of each. 
+    
+    ### Dimensions \n\nOneHotEncoded matrix would look like: \n\n**D x V**\n\nThat means there is a row for each review And a column for each unique word. The matrix is full of **0s and 1s**, 0 if the word does not appear in the review and 1 if it does. \n\n## TF-IDF \n\nOn the other hand, TF-IDF weights each word based on how often it appears relative to all of the other words across all reviews. \n\nTF-IDF will create a **sparse matrix**, since most of the values will be zero. \n\n### Dimensions \n\nTF-IDF matrix is just like OneHotEncoder:\n\n**D x V** \n\nEach row is a review and each column is a unique word across all of the reviews. The only difference is the values. There are still 0s if the word did not appear in the given review. However, instead of 0s, the matrix is filled with the relative occurr of the given word compared to all of the words in the entire document (*across all reviews*). \n\n## Word2Vec \n\nNow we introduce embeddings. Word2Vec models are **dense matrices**, since all (*or at least most*) values are non-zero. \n\nVectorization of semantics of words. Words with closer meaning are closer together in the embedding space.\n\nEvery word is represented by exactly one point in the embedding space. \n\n### Dimensions \n\n**V x N**, where N is the embedding space size. \n\nFor example, if *N = 300* then each word is represented as a vector of size 300. \n\n## Transformers \n\nSure, we skipped over some of the major advancements in NLP over the years, including bigram and trigram and attention heads. \n\nHowever, the main point of this post is to showcase how our handling of language data has evolved and sophisticated over time. \n\nInstead of every word being represented by a single point in the embedding space, now each meaning of each word has a mathematical representation in the embedding space. \n\n### The Right Example \n\nFor example, let's look at the word **right.**\n\n**Right** can be used to express directionality. \n\n*E.g. \"to the right\"*\n\nIt can also be used to represent time. \n\n*E.g. \"right now\"*\n\nAnd it can be used to express the truth or correctness of something. \n\n*E.g. \"that is right\"* \n\nWith Word2Vec, **the word** 'right' would be represented as a single point. \n\nOn the other hand, in a Transformer model, **each of the meanings** of the word 'right' would be represented as a single point. \n\n
+    
+    *Note: there are probably more meanings to the word 'right' that I did not include.*\n\n\n\n"}
