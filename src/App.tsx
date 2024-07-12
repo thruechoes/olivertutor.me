@@ -10,17 +10,15 @@ import './index.css';
 
 const App: React.FC = () => {
   return (
-    <Router basename="/olivertutor.me">
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/posts/:slug" element={<PostPage />} />
-          <Route path="/reviews" element={<ReviewsPage />} />
-        </Routes>
-      </Layout>
-    </Router>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/posts/:slug" element={<PostPage />} />
+        <Route path="/reviews" element={<ReviewsPage />} />
+      </Routes>
+    </Layout>
   );
 };
 

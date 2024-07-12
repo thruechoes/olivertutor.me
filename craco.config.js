@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     webpack: {
       configure: (webpackConfig) => {
@@ -6,6 +8,14 @@ module.exports = {
           buffer: false,
         };
         return webpackConfig;
+      },
+    },
+    style: {
+      postcss: {
+        plugins: [
+          require('tailwindcss')(path.resolve(__dirname, 'tailwind.config.js')),
+          require('autoprefixer'),
+        ],
       },
     },
   };
