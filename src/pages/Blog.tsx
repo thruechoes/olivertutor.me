@@ -22,8 +22,8 @@ const Blog: React.FC = () => {
     
     const fetchPosts = async () => {
       const postFiles = [
-        '/posts/2024-07-12-Dont-say-what-you-mean-embed-it.md',
-        '/posts/2024-07-11-Calc-III-study-guide.md'
+        '/olivertutor.me/posts/2024-07-12-Dont-say-what-you-mean-embed-it.md',
+        '/olivertutor.me/posts/2024-07-11-Calc-III-study-guide.md'
         // Add more posts here
       ];
 

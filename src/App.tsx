@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
@@ -10,15 +10,17 @@ import './index.css';
 
 const App: React.FC = () => {
   return (
-    <Layout>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/posts/:slug" element={<PostPage />} />
-        <Route path="/reviews" element={<ReviewsPage />} />
-      </Routes>
-    </Layout>
+    <Router basename="/olivertutor.me">
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/posts/:slug" element={<PostPage />} />
+          <Route path="/reviews" element={<ReviewsPage />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 };
 
