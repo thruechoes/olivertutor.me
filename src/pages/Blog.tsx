@@ -1,50 +1,40 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import fm from 'front-matter';
 import Contact from '../components/Contact';
 
-interface PostData {
+interface BlogPostProps {
   slug: string;
-  frontmatter: {
-    title: string;
-    subtitle: string;
-    date: string;
-    keywords: string[];
-  };
+  month: string;
+  title: string;
+  subtitle: string;
+  date: string;
+  keywords: string[];
 }
 
-const Blog: React.FC = () => {
-  const [posts, setPosts] = useState<PostData[]>([]);
+const blogPosts: BlogPostProps[] = [
+  {
+    slug: 'Dont-Say-What-You-Mean-Embed-It',
+    month: 'july2024',
+    title: "Don't say what you mean, embed it",
+    subtitle: 'A deep dive into NLP embeddings',
+    date: '2024-07-20',
+    keywords: ['NLP', 'Transformers', 'Embeddings', 'AI', 'Attention']
+  },
+  {
+    slug: 'Calc-III-Study-Guide',
+    month: 'july2024',
+    title: 'Calc III Study Guide',
+    subtitle: 'Mastering Multivariable Calculus',
+    date: '2024-07-20',
+    keywords: ['Math', 'Calculus 3', 'Multivariate', 'Calculus', 'Study Guide', 'UC Berkeley']
+  },
+  // Add more posts here
+];
 
+const Blog: React.FC = () => {
   useEffect(() => {
     // Scroll to top of page when linked here from button
-    window.scrollTo(0, 0); 
-    
-    const fetchPosts = async () => {
-      const postFiles = [
-        '/posts/2024-07-12-Dont-say-what-you-mean-embed-it.md',
-        '/posts/2024-07-11-Calc-III-study-guide.md'
-        // Add more posts here
-      ];
-
-      const posts = await Promise.all(
-        postFiles.map(async (file) => {
-          const response = await fetch(file);
-          const text = await response.text();
-          const { attributes: frontmatter } = fm<{ title: string; subtitle: string; date: string; keywords: string[]; }>(text);
-          const slug = file.split('/').pop()?.replace('.md', '') || '';
-
-          debugger; // This will pause execution and allow you to inspect `frontmatter` and `slug`
-
-          return { slug, frontmatter };
-        })
-      );
-
-      posts.sort((a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime());
-      setPosts(posts);
-    };
-
-    fetchPosts();
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -52,16 +42,17 @@ const Blog: React.FC = () => {
       <div className="container mx-auto p-5">
         <h1 className="text-6xl font-bold text-center text-customPurple mb-10">Blog</h1>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
-          {posts.map((post) => (
+          {blogPosts.map((post) => (
             <div key={post.slug} className="bg-white p-6 rounded-lg shadow-md flex flex-col">
               <div className="flex-grow">
-                <Link to={`/posts/${post.slug}`}>
-                  <h2 className="text-2xl font-bold mb-2">{post.frontmatter.title}</h2>
-                  <p className="text-gray-600">{new Date(post.frontmatter.date).toDateString()}</p>
+                <Link to={`/posts/${post.month}/${post.slug}`}>
+                  <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
+                  <p className="text-gray-600">{new Date(post.date).toDateString()}</p>
+                  <p className="text-gray-500">{post.subtitle}</p>
                 </Link>
               </div>
               <div className="mt-4 flex flex-wrap space-x-2 space-y-2 items-center">
-                {post.frontmatter.keywords.map((keyword, index) => (
+                {post.keywords.map((keyword, index) => (
                   <span key={index} className="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-sm mt-2 ml-2">
                     {keyword}
                   </span>
@@ -85,4 +76,3 @@ const Blog: React.FC = () => {
 };
 
 export default Blog;
-

@@ -58,7 +58,7 @@ const Home: React.FC = () => {
       <section className="bg-customGreen mt-0 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 border-t-2 border-b-2 border-black min-h-[400px]">
         <div className="w-1/2 mx-auto">
           <div className="flex-1 space-y-4 p-4">
-            <h2 className="text-4xl font-bold">About Oliver</h2>
+            <h2 className="text-5xl font-bold">About Oliver</h2>
             <p>Hi, I'm Oliver! I am here to guide you through the fascinating world of <i>Artificial Intelligence (AI)</i>, Python programming, and other topics in Data Science. No matter how much experience you have, I will help make these topics less intimidating and more digestible.</p>
           </div>
         </div>
