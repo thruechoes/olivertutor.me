@@ -13,19 +13,27 @@ interface BlogPostProps {
 
 const blogPosts: BlogPostProps[] = [
   {
+    slug: 'Stats-for-Data-Science-Study-Guide',
+    month: 'august2024',
+    title: "Statistics for Data Science Study Guide",
+    subtitle: 'Step-by-step solution guide to mathematical statistics for data science',
+    date: '2024-08-06',
+    keywords: ['Statistics', 'Data Science', 'Mathematical Statistics', 'Hypothesis Testing', 'MLE']
+  },
+  {
     slug: 'Dont-Say-What-You-Mean-Embed-It',
     month: 'july2024',
     title: "Don't say what you mean, embed it",
     subtitle: 'A deep dive into NLP embeddings',
-    date: '2024-07-20',
+    date: '2024-07-26',
     keywords: ['NLP', 'Transformers', 'Embeddings', 'AI', 'Attention']
   },
   {
     slug: 'Calc-III-Study-Guide',
-    month: 'july2024',
+    month: 'june2024',
     title: 'Calc III Study Guide',
     subtitle: 'Mastering Multivariable Calculus',
-    date: '2024-07-20',
+    date: '2024-06-14',
     keywords: ['Math', 'Calculus 3', 'Multivariate', 'Calculus', 'Study Guide', 'UC Berkeley']
   },
   // Add more posts here
@@ -40,8 +48,8 @@ const Blog: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <div className="container mx-auto p-5">
-        <h1 className="text-6xl font-bold text-center text-customPurple mb-10">Blog</h1>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+        <h1 className="text-6xl font-bold text-center text-customPurple m-12">Blog</h1>
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mb-12">
           {blogPosts.map((post) => (
             <div key={post.slug} className="bg-white p-6 rounded-lg shadow-md flex flex-col">
               <div className="flex-grow">

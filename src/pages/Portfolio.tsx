@@ -17,9 +17,9 @@ const Portfolio: React.FC = () => {
         window.scrollTo(0, 0);
     });
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen">
       {/*<div className="container mx-auto p-5">*/}
-        <h1 className="text-6xl font-bold text-center text-customPurple mb-10 p-5">Portfolio</h1>
+        <h1 className="text-6xl font-bold text-center text-customPurple m-12 p-5">Portfolio</h1>
         <section className="w-full mt-0 space-y-8 border-black border-t-2">
         <div className="relative bg-customPurple mt-0 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 section-border">
           {/*<img src={NaturePaper} alt="Oliver's Resume" className="w-full md:w-1/2" />*/}

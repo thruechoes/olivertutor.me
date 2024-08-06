@@ -8,6 +8,7 @@ import PostPage from './pages/PostPage';
 import ReviewsPage from './pages/Reviews';
 import CalcIIIStudyGuide from './posts/July2024/CalcIIIStudyGuide';
 import DontSayWhatYouMeanEmbedIt from './posts/July2024/DontSayWhatYouMeanEmbedIt';
+import StatsForDataScienceStudyGuide from './posts/August2024/StatsForDataScienceStudyGuide';
 import './index.css';
 
 const App: React.FC = () => {
@@ -18,8 +19,9 @@ const App: React.FC = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/reviews" element={<ReviewsPage />} />
-        <Route path="/posts/july2024/calc-iii-study-guide" element={<CalcIIIStudyGuide />} />
+        <Route path="/posts/june2024/calc-iii-study-guide" element={<CalcIIIStudyGuide />} />
         <Route path="/posts/july2024/dont-say-what-you-mean-embed-it" element={<DontSayWhatYouMeanEmbedIt />} />
+        <Route path="/posts/august2024/stats-for-data-science-study-guide" element={<StatsForDataScienceStudyGuide />} />
         {/*<Route path="/posts/:slug" element={<PostPage />} />
         <Route path="/reviews" element={<ReviewsPage />} />*/}
       </Routes>

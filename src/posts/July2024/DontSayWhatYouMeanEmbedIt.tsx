@@ -7,7 +7,7 @@ const DontSayWhatYouMeanEmbedIt: React.FC = () => {
     <div className="prose prose-lg mx-auto mt-10">
       <h1 className="text-4xl font-bold mb-2">Don't say what you mean, embed it?</h1>
       <h2 className="text-2xl text-gray-700 mb-4">How we learned to translate language to Computer</h2>
-      <p className="text-gray-500 mb-4">Fri Jul 19 2024</p>
+      <p className="text-gray-500 mb-4">Fri Jul 26 2024</p>
       <div className="flex flex-wrap mb-4">
         {['NLP', 'Transformer', 'Embeddings', 'AI', 'Attention'].map((keyword, index) => (
           <span 
