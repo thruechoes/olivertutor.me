@@ -35,7 +35,7 @@ const ReviewPage: React.FC = () => {
             <h1 className="text-6xl font-bold pb-2 mt-12 text-customPurple">180 Reviews</h1>
             <div className="flex mb-12">
               {[...Array(5)].map((_, i) => (
-                <span key={i} className="text-yellow-500 text-4xl">★</span>
+                <span key={i} className="text-yellow-500 text-4xl star-stroke">★</span>
               ))}
             </div>
           </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
+import '../css/Review.css';
 import { truncateText } from '../utils/truncateText';
 
 interface ReviewProps {
@@ -22,7 +23,7 @@ const Review: React.FC<ReviewProps> = ({ reviewer, location, date, lessons, quot
         <span className="ml-2">{location}</span>
       </div>
       <p className="text-center"><i>{lessons} lessons with Oliver</i></p>
-      <div className="text-yellow-300 text-center">
+      <div className="text-yellow-300 text-center text-2xl star-stroke">
         {'★'.repeat(5)} {/* 5 gold stars */}
       </div>
       <p className="font-bold text-center mt-2">{quote}</p>

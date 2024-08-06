@@ -1,0 +1,5 @@
+.star-stroke {
+    -webkit-text-stroke: 1px black; /* For Safari and Chrome */
+    text-stroke: 1px black; /* For other browsers that support text-stroke */
+  }
+  

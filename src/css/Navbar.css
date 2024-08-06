@@ -1,3 +1,7 @@
 .navbar-logo img {
     max-width: 250px;
 }
+
+.hover\\:text-navbarHover:hover {
+    color: #A277FF;
+}

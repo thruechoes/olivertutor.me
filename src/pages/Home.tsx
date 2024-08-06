@@ -58,7 +58,7 @@ const Home: React.FC = () => {
       <section className="bg-customGreen mt-0 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 border-t-2 border-b-2 border-black min-h-[400px]">
         <div className="w-1/2 mx-auto">
           <div className="flex-1 space-y-4 p-4">
-            <h2 className="text-5xl font-bold">About Oliver</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">About Oliver</h2>
             <p>Hi, I'm Oliver! I am here to guide you through the fascinating world of <i>Artificial Intelligence (AI)</i>, Python programming, and other topics in Data Science. No matter how much experience you have, I will help make these topics less intimidating and more digestible.</p>
           </div>
         </div>
@@ -68,7 +68,7 @@ const Home: React.FC = () => {
         <div className="relative bg-customPurple mt-0 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 section-border">
           <img src={ResumeImage} alt="Oliver's Resume" className="w-full md:w-1/2  border-black border-b-2 md:border-b-0" />
           <div className="flex-1 space-y-4 p-4 pl-36">
-            <h2 className="text-5xl font-bold pb-8">Check out Oliver's Resume</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold pb-8 lg:pr-36">Check out Oliver's Resume</h2>
             <a 
             href="/oliver_resume_june2024.pdf"
             download="oliver_resume_june2024.pdf"
@@ -82,7 +82,7 @@ const Home: React.FC = () => {
       <section className="mt-0 space-y-8 border-t-2 border-b-2 border-black">
         <div className="bg-customGreen mt-0 flex flex-col md:flex-row items-center space-y-4 md:space-y-0">
           <div className="flex-1 space-y-4 p-4 pr-36 text-right">
-            <h2 className="text-5xl font-bold pb-8">Here is Oliver's Portfolio</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold pb-8 lg:pl-52">Here is Oliver's Portfolio</h2>
             <Link to="/portfolio">
               <button className="bg-customBtn text-black px-4 py-2 rounded-md hover:bg-navbarHover hover:text-black">View Portfolio</button>
             </Link>
@@ -94,7 +94,7 @@ const Home: React.FC = () => {
       <div className="relative bg-customPink mt-0 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 section-border">
         <img src={GirlBooks} alt="Blog" className="w-full md:w-1/2 border-black border-b-2 md:border-b-0" />
         <div className="flex-1 space-y-4 p-4 pl-36">
-          <h2 className="text-5xl font-bold pb-8">Oliver on the latest in AI</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold pb-8 lg:pr-48">Oliver on the latest in AI</h2>
           <Link to="/blog">
             <button className="bg-customBtn text-black px-4 py-2 rounded-md hover:bg-navbarHover">Read Blog</button>
           </Link>
@@ -103,7 +103,7 @@ const Home: React.FC = () => {
 
       <div className="bg-customGreen flex mt-0 flex-col md:flex-row items-center space-y-4 md:space-y-0 border-t-2 border-b-2 border-black">
         <div className="flex-1 space-y-4 p-4 pr-36 text-right">
-          <h2 className="text-5xl font-bold pb-8">Schedule your tutoring session</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold pb-8 lg:pl-40">Schedule your tutoring session</h2>
           <a href="#contact-section">
             <button className="bg-customBtn text-black px-4 py-2 rounded-md hover:bg-navbarHover">Book Tutoring</button>
           </a>
